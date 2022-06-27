@@ -26,4 +26,4 @@ So we used the Illustration2Vec pre-trained model (loaded on the releases, also 
 
 ## CYCLEGAN constraint
 The Cycle GAN constraint consists in force the output of the model to be equal to the input.
-In our case we modified the lamda constant to a lower value in order to force the output just to be similar to the input, not equal.
+In our case we modified the lambda constant to a lower value in order to force the output just to be similar to the input, not equal.
