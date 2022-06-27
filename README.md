@@ -23,3 +23,7 @@ Thanks to this we were able to train the architecture for 200 epochs.
 We also wanted an objective metric to evaluate our progresses, so we implemented FID.
 However, the original FID was based on the Inception V3 model, that does not work very well on illustration, paintings et similia.
 So we used the Illustration2Vec pre-trained model (loaded on the releases, also available at https://github.com/rezoo/illustration2vec) as feature extractor and then computed the FID.
+
+## CYCLEGAN constraint
+The Cycle GAN constraint consists in force the output of the model to be equal to the input.
+In our case we modified the lamda constant to a lower value in order to force the output just to be similar to the input, not equal.
