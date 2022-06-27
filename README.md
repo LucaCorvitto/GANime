@@ -17,7 +17,7 @@ Others, instead, enhanced greatly the performance of the network, at the cost of
 ## Checkpoints
 At some point of our work we thought that if we want to generate some really good images, we needed to train our architecture for long time, because we had limits on our computational power, in fact all the architectures were trained on a single GPU (NVIDIA RTX 3060 laptop).
 So we added checkpoints to store our progresses and keep the training from the point we stopped the last time.
-Thanks to this we were able to train the architecture for 200 epochs.
+Thanks to this we were able to train the architecture for 100 epochs.
 
 ## FID metric for Anime Images
 We also wanted an objective metric to evaluate our progresses, so we implemented FID.
