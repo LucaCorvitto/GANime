@@ -1,8 +1,13 @@
 # VISIOPE_GANime_corvitto_faiella
 Repository for the project of Vision and Perception about a GAN that generates anime faces.
 
+## Instructions to run the code
+To visualize the results obtained by our architecture you can just run the testing.ipynb file (the pretrained models are available in the releases), that will generate a grid of 4 images and then passes it to the srgan to enhance the resolution, the outputs are visible in the file yet.
+If, instead, one wants to run the training from scratch, than it is possible to do it running each one of the different architectures that are in this git (each one indipendent from others). To do that it is needed to download the datasets available on Kaggle or on the releases.
+
 ## Dataset
 Since our goal is to generate drawn and colored faces in an updated anime style, we searched and found a dataset that met our exception on Kaggle.com (https://www.kaggle.com/datasets/scribbless/another-anime-face-dataset). This dataset contains 92,219 images of size 256x256 and take examples from different works and different authors. This examples are mainly composed by female anime faces, so our architecture is biased to generate female anime faces.
+Another dataset was used to train the SRGAN, available on Kaggle as well (https://www.kaggle.com/datasets/lukexng/animefaces-512x512), it contains 140,000 images of size 512x512. In the implementation this dataset was splitted in different folders, to lighten the training. The anime_face folder contains 88,140 files, the dev_anime_face contains 3,824 files and the small_data contains 1,096 files.
 
 ## Baseline: DCGAN
 We started our architecture from a simple **D**eep **C**onvlutional **G**enerative **A**dversarial **N**etwork.
@@ -27,3 +32,12 @@ So we used the Illustration2Vec pre-trained model (loaded on the releases, also 
 ## CYCLEGAN constraint
 The Cycle GAN constraint consists in force the output of the model to be equal to the input.
 In our case we modified the lambda constant to a lower value in order to force the output just to be similar to the input, not equal.
+
+## WGAN
+The Wassertein Distance is useful to make the training more stable (mitigating or avoiding the mode collapse.
+
+## SRGAN
+At the end we wanted to add this other architecture to enhance the resolution of our images, from 64x64 to 512x512
+
+## STYLEGAN3
+This is the state of the art architecture. We wanted to try it and compare it to ours.
