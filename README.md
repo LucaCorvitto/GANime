@@ -2,7 +2,7 @@
 Repository for the project of Vision and Perception about a GAN that generates anime faces.
 
 ## Instructions to run the code
-To visualize the results obtained by our architecture you can just run the testing.ipynb file (the pretrained models are available in the releases), that will generate a grid of 4 images and then passes it to the srgan to enhance the resolution; the outputs are visible in the file yet.
+To visualize the results obtained by our architecture you can just run the testing.ipynb file (the pretrained models "last_saved_model_100_good.tar" and "netG_epoch_5_smallData.pth" are available in the releases), that will generate a grid of 4 images and then passes it to the srgan to enhance the resolution; the outputs are visible in the file yet.
 If, instead, one wants to run the training from scratch, than it is possible to do it running each one of the different architectures that are in this git (each one indipendent from others). To do that it is needed to download the datasets available on Kaggle.
 
 ## Dataset
