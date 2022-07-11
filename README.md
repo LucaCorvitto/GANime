@@ -3,7 +3,7 @@ Repository for the project of Vision and Perception about a GAN that generates a
 
 ## Instructions to run the code
 To visualize the results obtained by our architecture you can just run the testing.ipynb file (the pretrained models are available in the releases), that will generate a grid of 4 images and then passes it to the srgan to enhance the resolution; the outputs are visible in the file yet.
-If, instead, one wants to run the training from scratch, than it is possible to do it running each one of the different architectures that are in this git (each one indipendent from others). To do that it is needed to download the datasets available on Kaggle or on the releases.
+If, instead, one wants to run the training from scratch, than it is possible to do it running each one of the different architectures that are in this git (each one indipendent from others). To do that it is needed to download the datasets available on Kaggle.
 
 ## Dataset
 Since our goal is to generate drawn and colored faces in an updated anime style, we searched and found a dataset that met our exception on Kaggle.com (https://www.kaggle.com/datasets/scribbless/another-anime-face-dataset). This dataset contains 92,219 images of size 256x256 and take examples from different works and different authors. This examples are mainly composed by female anime faces, so our architecture is biased to generate female anime faces.
@@ -27,7 +27,7 @@ Thanks to this we were able to train the architecture for 100 epochs.
 ## FID metric for Anime Images
 We also wanted an objective metric to evaluate our progresses, so we implemented FID.
 However, the original FID was based on the Inception V3 model, that does not work very well on illustration, paintings et similia.
-So we used the Illustration2Vec pre-trained model (loaded on the releases, also available at https://github.com/rezoo/illustration2vec) as feature extractor and then computed the FID.
+So we used the Illustration2Vec pre-trained model ("illust2vec_ver200.caffemodel", available at https://github.com/rezoo/illustration2vec) as feature extractor and then computed the FID.
 
 ## CYCLEGAN constraint
 The Cycle GAN constraint consists in force the output of the model to be equal to the input.
