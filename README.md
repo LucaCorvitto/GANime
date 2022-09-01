@@ -16,6 +16,7 @@ Now we can see how performs the SRGAN and how our best results change in super r
 ![plot](./results/SRGAN/epoch_5_index_4.png)
 ### LOW RESOLUTION VS SUPER RESOLUTION
 ![plot](./results/low_res_vs_super_res/04.png)
+#############################################
 ![plot](./results/low_res_vs_super_res/02.png)
 
 ## Instructions to run the code
