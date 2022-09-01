@@ -17,7 +17,7 @@ low_res | original high_res | generated super_res
 ![plot](./results/SRGAN/epoch_5_index_4.png)
 ### Generated low resolution VS Generated super resolution
 ![plot](./results/low_res_vs_super_res/04.png)
-####################################################################################################################################################################
+#######################################################################################################################
 ![plot](./results/low_res_vs_super_res/02.png)
 
 ## Instructions to run the code
