@@ -57,7 +57,7 @@ In our case we modified the lambda constant to a lower value in order to force t
 The Wassertein Distance is useful to make the training more stable (mitigating or avoiding the mode collapse).
 
 ## SRGAN
-At the end we wanted to add this other architecture to enhance the resolution of our images, from 64x64 to 512x512
+At the end we wanted to add this other architecture to enhance the resolution of our images, from 64x64 to 512x512. For this part we took inspiration from https://github.com/goldhuang/SRGAN-PyTorch
 
 ## STYLEGAN3
 This is the state of the art architecture. We wanted to try it and compare it to ours. The original code is available at https://github.com/NVlabs/stylegan3
