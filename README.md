@@ -1,4 +1,4 @@
-# VISIOPE_GANime_corvitto_faiella
+# GANime
 Repository for the project of Vision and Perception about a GAN that generates anime faces.
 
 ## Visual Results
@@ -69,3 +69,8 @@ At the end we wanted to add this other architecture to enhance the resolution of
 
 ## STYLEGAN3
 This is the state of the art architecture. We wanted to try it and compare it to ours. The original code is available at https://github.com/NVlabs/stylegan3
+
+# Authors
+[Luca Corvitto](https://github.com/LucaCorvitto)
+
+[Lorenzo Faiella](https://github.com/FiscalTax)
